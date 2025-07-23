@@ -1,0 +1,133 @@
+#root { max-width: 1280px; margin: 0 auto; padding: 2rem; text-align: center; }
+.app-formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+
+.background-detail { position: fixed; inset: 0; z-index: -1; }
+.layer1, .layer2, .layer3 { position: absolute; width: 100vw; height: 100vh; }
+.layer1 { background: linear-gradient(120deg, #1976d2 0%, #1565c0 100%); opacity: 0.12; }
+.layer2 { background: linear-gradient(100deg, #1976d2 0%, #42a5f5 100%); opacity: 0.10; }
+.layer3 { background: linear-gradient(140deg, #42a5f5 0%, #1976d2 100%); opacity: 0.08; }
+
+.colaborador-autocomplete-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(26,35,126,0.22);
+  padding: 40px 36px 32px 36px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 500px;
+  min-width: 350px;
+  min-height: 600px;
+  height: 600px;
+  overflow-y: auto;
+  justify-content: flex-start;
+}
+
+.colaborador-title,
+.colaborador-label,
+.colaborador-input-modern,
+.colaborador-btn-modern,
+.colaborador-btn-voltar {
+  text-align: left;
+}
+
+.colaborador-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1976d2;
+  margin-bottom: 12px;
+  width: 100%;
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 6px;
+}
+
+.colaborador-label {
+  font-weight: 500;
+  margin-bottom: 2px;
+  color: #1a237e;
+  font-size: 1rem;
+}
+
+.colaborador-input-modern {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #b0bec5;
+  border-radius: 8px;
+  background: #f7faff;
+  color: #1a237e;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  transition: border 0.2s;
+}
+.colaborador-input-modern:focus { border-color: #1976d2; outline: none; }
+.colaborador-input-modern.obrigatorio-vazio { border-color: #e53935; background: #fff3f3; }
+
+.colaborador-btn-modern {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: background 0.2s;
+  /* Ajuste para alinhar o botão à esquerda na página 1 */
+  text-align: left;
+  align-self: flex-start;
+}
+.colaborador-btn-modern:hover { background: #1565c0; }
+
+.colaborador-btn-voltar {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.2s;
+}
+.colaborador-btn-voltar:hover { background: #1565c0; }
+
+.obrigatorio-vazio { color: #e53935; font-size: 0.95em; }
+
+.colaborador-autocomplete-card::-webkit-scrollbar { width: 8px; }
+.colaborador-autocomplete-card::-webkit-scrollbar-thumb { background: #1976d2; border-radius: 8px; }
+.colaborador-autocomplete-card::-webkit-scrollbar-track { background: transparent; }
+
+/* Ajuste para inputs e labels ficarem mais próximos do lado esquerdo */
+.colaborador-autocomplete-card > div,
+.colaborador-autocomplete-card label,
+.colaborador-autocomplete-card input,
+.colaborador-autocomplete-card textarea,
+.colaborador-autocomplete-card select {
+  text-align: left;
+}
+
+.colaborador-input-modern,
+.colaborador-autocomplete-card textarea,
+.colaborador-autocomplete-card select {
+  min-height: 44px;
+  box-sizing: border-box;
+}
+
+.colaborador-autocomplete-card textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+
