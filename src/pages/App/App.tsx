@@ -1,5 +1,3 @@
-
-
 import { useState } from 'react';
 import { ColaboradorAutocomplete } from '../../components/ColaboradorAutocomplete';
 import type { Colaborador } from '../../components/ColaboradorAutocomplete';
@@ -131,7 +129,7 @@ function App() {
         <form onSubmit={handleSubmit}>
           {/* Título dentro do formulário */}
           {page === 1 ? (
-            <div className="colaborador-autocomplete-card" style={{maxWidth: 600, margin: '32px auto', width: '100%'}}>
+            <div className="colaborador-autocomplete-card">
               <h2 className="colaborador-title" style={{marginBottom: 24}}>Recorrencia de Tarefas</h2>
               <div style={{display: 'flex', flexDirection: 'column', gap: 6, alignItems: 'flex-start', width: '100%'}}>
                 <label className="colaborador-label">Nome das Tarefas *</label>
@@ -194,7 +192,7 @@ function App() {
               </button>
             </div>
           ) : (
-            <div className="colaborador-autocomplete-card" style={{maxWidth: 440, width: '100%', position: 'relative', margin: 0, top: 0, left: 0, right: 0, bottom: 0, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', alignItems: 'center', minHeight: 540, paddingTop: 60}}>
+            <div className="colaborador-autocomplete-card scrollable">
               <h2 className="colaborador-title" style={{marginBottom: 24}}>Recorrencia de Tarefas</h2>
               <button
                 className="colaborador-btn-voltar"
